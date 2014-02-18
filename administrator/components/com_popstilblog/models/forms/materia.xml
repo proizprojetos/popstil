@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="detalhes_materia">
+		<field 
+			name="id"
+			type="hidden"
+		/>
+		<field 
+			name="titulo"
+			type="text"
+			class="inputbox"
+			label="O titulo da matéria"
+			description="O titulo que irá aparecer no site"
+			size="100"
+			default=""
+			required="true"
+		/>
+		<field 
+			name="texto_intro"
+			type="editor"
+			label="Primeiro paragrafo da matéria"
+			description="Primeiro paragrafo da matéria"	
+			filter="safehtml"
+		/>
+		
+		<field name="text" type="editor" class="inputbox"
+			label="COM_CONTENT_FIELD_ARTICLETEXT_LABEL" description="COM_CONTENT_FIELD_ARTICLETEXT_DESC"
+			filter="JComponentHelper::filterText" buttons="true" />
+		<field
+			name="imagem_intro"
+			type="media"
+			directory="materias"
+			class="inputbox"
+			label="Imagem de introdução"
+			description="Imagem de introdução da matéria"
+			required="true"
+		/>
+		<field
+			name="imagem_capa"
+			type="media"
+			directory="materias"
+			class="inputbox"
+			label="Imagem de capa"
+			description="Imagem de capa, que irá aparecer na pagina inicial e busca."
+			required="true"
+		/>
+		<field
+			name="status"
+			type="radio"
+			class="radio btn-group"
+			label="Esta ativo?"
+			default="1"
+			description="Se o desconto esta ativo ou não no sistema"
+		>
+			<option value="1">Sim</option>
+			<option value="0">Não</option>
+		</field>
+		
+		<field 
+			name="metakey"
+			type="text"
+			class="inputbox"
+			label="Palavras-chave"
+			description="Uma lista opcional, separada por vírgulas, de palavras-chave ou frases para serem usadas na saída HTML."
+			size="250"
+		/>
+		<field
+			name="id_categoria"
+			type="categoria"
+			class="inputbox"
+			label="Categoria da matéria"
+			description="Categoria da matéria"
+			required="true"
+			addfieldpath="/administrator/components/com_popstilblog/models/fields"
+		/>
+		<field 
+				name="id_autor" 
+				type="user"
+				label="Autor" 
+				description="Quem publicou essa matéria" 
+				labelclass="control-label" 
+				required='true' 
+		/>
+		<field
+			name="inicio_publicacao"
+			type="calendar"
+			format="%d-%m-%Y %H:%M:%S"
+			class="inputbox"
+			size="22"
+			filter="user_utc"
+			label="Inicio da publicação"
+			description="A partir de que dia o slider será visivel?"
+			required="true"
+		/>
+		<field
+			name="fim_publicacao"
+			type="calendar"
+			format="%d-%m-%Y %H:%M:%S"
+			class="inputbox"
+			size="22"
+			filter="user_utc"
+			label="Fim da publicação"
+			description="Até que dia o slider será visivel?"
+			required="true"
+			default="05-10-2020"
+		/>
+		<field name="tag" type="hidden" />
+	</fieldset>
+</form>

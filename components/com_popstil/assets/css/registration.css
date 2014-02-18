@@ -1,0 +1,60 @@
+.btregistrar {
+	text-align: center;
+	display: inline;
+	border: 2px solid #eaeaea;
+	padding: 14px 8px 6px 1px;
+	margin-left: 10px;
+	background: #fff;	
+}
+.btregistrar button[type="submit"] {
+	margin: 0px 0px 11px 6px;
+	padding: 2px 22px 2px 22px;
+	background: #41c4dd;
+	color: #fff;
+	box-shadow: inset 2px 2px 4px #0487a0;
+	-moz-box-shadow: inset 2px 2px 4px #0487a0;
+	-webkit-box-shadow: inset 2px 2px 4px #0487a0;
+	border: none;
+	border-radius: 0px;
+}
+span {
+	position: absolute;
+	margin: 0px 0px 0px -10px;
+}
+
+.bt_salvar {
+	border: 1px solid #eaeaea;
+	padding: 7px;
+	background: #fff;
+	display: inline-block;
+}
+
+.bt_salvar input[type='submit'] {
+	padding: 8px 15px;
+	background: #41c4dd;
+	color: #fff;
+	box-shadow: inset 2px 2px 4px #0487a0;
+	-moz-box-shadow: inset 2px 2px 4px #0487a0;
+	-webkit-box-shadow: inset 2px 2px 4px #0487a0;
+	border: none;
+	font-family: din_light;
+	text-transform: uppercase;
+}
+
+#sub-header-wrap {
+	margin-top: 50px;
+}
+.cabecalho_popstil {
+	background: url("../img/fd_padrao.png") repeat !important;
+	padding: 70px 0px 60px 0px;
+	margin-top: -30px;
+}
+.mensagens_joomla {
+	background: url("../img/fd_padrao.png") repeat !important;
+}
+.corpo {
+	display: none;
+}
+#corpo_cadastro {
+	margin-top: 50px;
+}

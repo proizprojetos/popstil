@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="detalhes_sugestao">
+		<field 
+			name="id"
+			type="hidden"
+		/>
+		<field
+			name="imagem"
+			type="media"
+			directory="sugestao"
+			class="inputbox"
+			label="Imagem da sugestão"
+			description="Imagem de sugestão"
+			required="true"
+		/>
+		<field 
+			name="titulo"
+			type="text"
+			class="inputbox"
+			label="O titulo da sugestão"
+			description="O titulo que irá aparecer no site"
+			size="40"
+			default=""
+			required="true"
+		/>
+		<field 
+			name="subtitulo"
+			type="text"
+			class="inputbox"
+			label="O sub titulo da sugestão"
+			description="O sub titulo que irá aparecer no site"
+			size="40"
+			default=""
+			required="true"
+		/>
+		<field 
+			name="texto"
+			type="text"
+			class="inputbox"
+			label="O texto da sugestão"
+			description="O texto que irá aparecer no site"
+			size="40"
+			default=""
+			required="true"
+		/>
+		<field 
+			name="preco"
+			type="text"
+			class="inputbox"
+			label="O preço da sugestão"
+			description="O preco que irá aparecer no site"
+			size="40"
+			default=""
+			required="true"
+		/>
+		
+		<field
+			name="status"
+			type="radio"
+			class="radio btn-group"
+			label="Mostrar tag?"
+			default="1"
+			description="Se a sugestao esta ativa ou não no sistema"
+		>
+			<option value="1">Sim</option>
+			<option value="0">Não</option>
+		</field>
+	</fieldset>
+</form>

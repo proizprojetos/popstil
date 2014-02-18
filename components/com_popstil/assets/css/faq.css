@@ -1,0 +1,40 @@
+#tela_faq {
+	margin-bottom: 150px;
+}
+#faq h3{
+	background: transparent url('../img/faq_seta.png') no-repeat right -25px;
+	text-align: left;
+	font:  bold 17px/25px Tahoma, Verdana;
+	color: #41c4dd;
+}
+#faq h3:hover{
+	cursor: pointer;
+}
+
+#faq .ativo {
+	background: transparent url('../img/faq_seta.png') no-repeat right 0px;
+}
+
+#faq .texto {
+	display: none;
+	padding: 10px 20px;
+	text-align: left;
+	font: normal 14px Tahoma;
+	color: #58595b;
+}
+
+#faq .texto ul {
+	list-style-type: decimal;
+	margin-left: 50px;
+}
+
+#tela_faq h4{
+	font: normal 25px "din_cond_bold", Tahoma;
+	color: #58595b;
+}
+
+.cabecalho_popstil {
+	background: url("../img/fd_padrao.png") repeat !important;
+	padding: 70px 0px 80px 0px;
+	margin-top: -30px;
+}

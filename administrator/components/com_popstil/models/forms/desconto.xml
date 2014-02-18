@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="detalhes_desconto">
+		<field 
+			name="id"
+			type="hidden"
+		/>
+		<field 
+			name="code_desconto"
+			type="text"
+			class="inputbox"
+			label="O codigo de desconto"
+			description="O codigo que o usuario ira receber, e que sera utilizado para gerar o desconto"
+			size="40"
+			default=""
+			required="true"
+		/>
+		<field
+			name="desconto"
+			type="text"
+			class="inputbox"
+			label="O valor do desconto"
+			description="O valor que o desconto terá, se for em porcento utilize 1 para 100% (ex: 50% - 0.5)."
+			required="true"
+		/>
+		<field
+			name="tipo_desconto"
+			type="radio"
+			class="radio btn-group"
+			label="Tipo de desconto?"
+			default="RS"
+			description="Qual o tipo de desconto que esse desconto tera?"
+		>
+			<option value="RS">R$</option>
+			<option value="PO">Porce. (%)</option>
+		</field>
+		<field
+			name="ativo"
+			type="radio"
+			class="radio btn-group"
+			label="Mostrar desconto?"
+			default="0"
+			description="Se o desconto esta ativo ou não no sistema"
+		>
+			<option value="1">Sim</option>
+			<option value="0">Não</option>
+		</field>
+		<field
+			name="datainicio"
+			type="calendar"
+			format="%d-%m-%Y %H:%M:%S"
+			size="22"
+			filter="user_utc"
+			class="inputbox"
+			label="Inicio da publicação"
+			description="A partir de que dia o desconto será disponivel?"
+			required="true"
+		/>
+		<field
+			name="datafim"
+			type="calendar"
+			format="%d-%m-%Y %H:%M:%S"
+			class="inputbox"
+			size="22"
+			filter="user_utc"
+			label="Fim da publicação"
+			description="Até que dia o desconto será disponivel?"
+			required="true"
+		/>
+		<field
+			name="destaque"
+			type="radio"
+			class="radio btn-group"
+			label="Mostrar desconto como destaque nas paginas?"
+			default="0"
+			description="Se o desconto sera mostrado ou não nas páginas"
+		>
+			<option value="1">Sim</option>
+			<option value="0">Não</option>
+		</field>
+	</fieldset>
+</form>

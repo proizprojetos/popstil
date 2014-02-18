@@ -1,0 +1,274 @@
+﻿#wrapper_carrinho {
+	/*overflow:hidden;
+	float:left;
+	width: 100%;*/
+	position:relative;
+}
+#inner_carrinho {
+	margin-top: 100px;
+}
+#imgCarrinho {
+	background-image: url('../img/carrinho_mulher.png');
+	background-repeat: no-repeat;
+	background-position: 140px -150px ;
+}
+
+#imgCarrinhoMsg img{
+	margin-top: -170px;	
+}
+
+#carrinhoMsg {
+	background-color: #41c4dd;
+	width:385px;
+	padding-left: 80px;
+	float: left;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+}
+#msgCarrinho {
+	padding: 25px 40px 0px 50px;	
+}
+#carrinhoMsg h1 {
+	font-family: din_light;	
+	color: #fff;
+	font-size: 36px;
+	font-weight:normal;
+}
+#carrinhoMsg h3 {
+	font-family: din_light;	
+	color: #fff;
+	font-size: 24px;
+	font-weight:normal;
+}
+#btnconfirmapedido {
+	text-align: center;
+}
+
+.btnconfirma {
+	background-color: #ffca72 !important;
+	border: 1px solid #d58401;	
+	display: inline !important;
+	color: #fff !important;
+	text-shadow: none !important;
+	padding: 6px 15px 6px 15px !important;
+	-webkit-box-shadow: 2px 2px 3px 0px #a3a3a5;
+	-moz-box-shadow: 2px 2px 3px 0px #a3a3a5;
+	box-shadow: 2px 2px 3px 0px #a3a3a5;
+}
+
+#carrinhoItens {
+	/*width: 100%;
+	margin-left: 435px;*/
+	padding-left: 435px;
+	background-color: #f1f2f2;
+}
+
+.fotoItem {
+	width: 150px;
+	height: 90px;
+	float: left;
+	margin-right: 25px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-right: 50px;
+}
+.fotoItem img {
+	border: 10px solid #fff;	
+	width: 150px;
+	height: 90px;
+}
+
+.detalheItem {
+	float: left;	
+}
+
+.detalheQuadro {
+	width:165px;
+	float: left;
+	background-color: #f7f7f7;
+	margin: 0px 10px 10px 0px;
+	padding: 12px 5px 15px 15px;
+}
+
+#tituloCarrinhoItens h3{
+	font-family: din_light;	
+	color: #58595b;
+	font-size: 30px;
+	font-weight:normal;
+	margin-left:50px;
+	padding-top: 15px;
+}
+
+.itemCarrinho {
+	display: inline-block;
+	margin: 20px 0px 30px 50px;	
+}
+
+.quadrosItem {
+	float: left;
+	margin-left: 35px;	
+}
+
+.itemCarrinho h4, .itemCarrinho h2{
+	font-family: din_light;	
+	color: #58595b;
+	font-size: 17px;
+	font-weight:normal;	
+	margin: 0 auto;
+	line-height: normal;
+}
+.itemCarrinho h2 {
+	font-family: din_regular;	
+	font-weight:bold;	
+}
+
+#carrinho_subtotal, #carrinho_frete, #carrinho_total {
+	padding: 10px 0px 10px 50px;
+}
+#totalcarrinho {
+	text-align: right;
+}
+#totalcarrinho p {
+	margin: 0 auto;	
+	margin-right: 100px;
+	display: inline-block;
+}
+#carrinho_total {
+	font-size: 20px;	
+	margin-top:20px;
+}
+#carrinho_frete {
+	background-color: #eaebeb;
+}
+
+.fotoItem, .detalheItem, .quadrosItem {
+	margin-top: 25px;	
+}
+
+#carrinhoVazio {
+	text-align: center;
+	min-height: 150px;	
+}
+
+#carrinho_frete {
+	text-align:left;	
+}
+#carrinho_frete p {
+	float:right;	
+	padding-top: 10px;
+}
+
+#calcularFrete form, #calcularFrete input {
+	margin: 0 auto;
+	margin-right: 15px;
+	float: left;
+}
+#codigo_desconto {
+	background: #f1f2f2;	
+	border-radius: 0;
+}
+#calcularFrete {
+	display: inline-block;	
+}
+#btncarrinho_cep:active {
+	box-shadow: none;
+}
+#calcularFrete select {
+	width: 100px;
+	height:31px;
+	padding: 5px 11px !important;	
+	float: left;
+	margin-right: 15px;	
+	background: #f1f2f2 !important;
+}
+
+.btazulpadrao{
+	display: inline !important;
+	color: #fff !important;
+	text-shadow: none !important;
+	padding: 6px 15px 6px 15px !important;
+	-webkit-box-shadow: 2px 2px 3px 0px #a3a3a5;
+	-moz-box-shadow: 2px 2px 3px 0px #a3a3a5;
+	box-shadow:2px 2px 3px 0px #a3a3a5;	
+	border: 1px solid #0f8ba3;
+	background-color: #41c4dd;
+}
+
+#cep_carrinho {
+	background: #f1f2f2;
+	padding: 5px 3px 5px 15px;
+	border-radius: 0;
+	width:100px;
+		
+}
+.btazulpadrao:hover {
+	text-decoration: none ; 	
+}
+
+.msgErro {
+	color: #F00;
+	/*display: inline-block;	*/
+	display: table-cell;
+}
+
+
+/*TELA DE CONFIRMAÇÃO DO PEDIDO*/
+.detalhepedidorealizado {
+	margin-left: 50px;
+	min-height:  150px;
+}
+#carrinho_fretefinalizado {
+	text-align: right;
+	background-color: #eaebeb;
+	padding: 10px 0px 10px 50px;
+}
+.finalizada #msgCarrinho h1{
+	font-family: 'din_black';
+	color: #ffca73;
+}
+.finalizada #msgCarrinho h5 {
+	font-family: Verdana;
+	font-size: 12px;
+}
+
+.mensagens_joomla {
+	position: absolute;
+	margin-left: 15%;
+}
+.mensagens_joomla .alert {
+	border: none !important;
+	background: transparent !important;
+	color: #000;
+	font-family: din_light;
+	font-size: 14px;	
+}
+.mensagens_joomla .alert h4{
+	color: #000;
+	font-family: din_light;
+	font-size: 18px;
+}
+.conteudoDetalheQuadro form {
+	display: inline;
+}
+
+.conteudoDetalheQuadro form input[type='submit'] {
+	border-radius: 15px;
+	position: relative;
+	top: -25px;
+	left: 95%;
+	border: 1px solid;
+	background: #fff;
+	margin-bottom: -7px;
+	padding-bottom: 0;
+}
+.conteudoDetalheQuadro h2 {
+	margin-top: -15px;
+}
+
+.cabecalho_popstil {
+	background: url("../img/fd_padrao.png") repeat !important;
+	padding: 120px 0px 50px 0px;
+	margin-top: -30px;
+}

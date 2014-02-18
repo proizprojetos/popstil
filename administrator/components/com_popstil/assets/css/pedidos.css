@@ -1,0 +1,46 @@
+#pedido_corpo_left {
+	float: left;
+	min-width: 30%;
+	margin: 0px;	
+}
+.pedido_detalhe, .pedido_detalhe_cliente{
+	padding: 20px;
+	border: 1px solid #d1d3d4;
+	background: #f5f5f5;
+	
+}
+ #pedido_detalhe_cliente {
+ 	margin:  0px;
+ 	margin-left: 35%;
+ }
+ 
+ .item_pedido_left {
+ 	float: left;
+ 	padding: 20px;
+ 	border: 1px solid #d1d3d4;
+ 	background: #f5f5f5;
+ 	text-align: center;
+ 	height: 100%;
+ }
+ 
+ .item_pedido_left .foto_pedido, .foto_pedido img, .item_pedido_img {
+ 	width: 140px;
+ 	height: 90px;
+ }
+  .item_pedido_left .foto_pedido, .item_pedido_img	{
+ 	border: 10px solid #fff;
+ 	}
+ 
+.quadro_item_wrapper {
+ 	margin-left: 300px;
+	border: 1px solid #d1d3d4;
+	background: #f5f5f5;
+	margin-bottom: 10px;
+ }
+ .quadro_item {
+ 	margin: 10px;
+ }
+ 
+ .item_pedido_img, .foto_pedido {
+ 	margin-left: 35px;
+ }

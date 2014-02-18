@@ -1,0 +1,79 @@
+/**classes responsivas **/
+.coluna {
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	display: table;
+	width: 1024px;
+}
+.col6 {
+	width: 47.05%/*235px*/;
+	float: left;
+	text-align: left;
+	margin-left: 1em;
+}
+.col12 {
+	width: 98.05%/*235px*/;
+	float: left;
+	text-align: left;
+	margin-left: 1em;
+	
+}
+.corpo_indice {
+	background-color: #fff;
+	border: 1px solid #dcddde;
+	padding: 8px;
+}
+
+.corpo_indice h2 {
+	font: normal 2.5em/1.3em "din_cond_medium", Tahoma;
+	color: #fdbf57;
+}
+.arquivo_ano {
+	float: left;
+	margin: 10px 130px 40px 0px;
+}
+
+.arquivo_ano p {
+	font: normal 2.2em/1.3em "din_cond_medium", Tahoma;
+	color: #4e4b48;
+}
+.arquivo_ano ul {
+	margin: 0;
+}
+.arquivo_ano ul li, .arquivo_ano ul li a, .arquivo_ano ul li a:hover {
+	list-style: none;
+	font: bold 1.2em/1.6em "din_cond_medium", Tahoma;
+	color: #4e4b48;
+	text-decoration: none;
+	text-transform:capitalize;
+}
+.arquivo_ano ul li span {
+	font: normal 0.9em/1em "din_light", Tahoma;
+	margin-left: 4px;
+	color: #6d6c6a;
+}
+
+.indice_tags a, .indice_tags a:hover {
+	text-decoration: none;
+	color: #9d9fa2;
+	font: bold 0.9em/1em "din_light", Tahoma;
+	letter-spacing: 1px;
+}
+
+
+.materia_tags ul {
+	padding: 0px;
+	margin: 0px;
+}
+.materia_tags ul li {
+	display: inline-table;
+	font: normal 1em/1.5em "din_light", Tahoma;
+	color: #fff;
+	padding: 5px 9px;
+	margin: 2px 2px;
+}
+.materia_tags ul li a{
+	color: #fff !important;
+	font: normal 0.9em/1.5em "din_light", Tahoma !important;
+}

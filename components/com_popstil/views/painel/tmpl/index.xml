@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+        <layout title="Painel de controle do usuario">
+                <message>
+                        <![CDATA[COM_POPSTIL_CADASTRO_VIEW_DEFAULT_DESC]]>
+                </message>
+        </layout>
+</metadata>

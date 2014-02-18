@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="detalhes_fundocategoria">
+		<field 
+			name="id"
+			type="hidden"
+		/>
+		<field 
+			name="descricao"
+			type="text"
+			class="inputbox"
+			label="A descricao da categoria"
+			description="A descricao da categoria"
+			size="40"
+			default=""
+			required="true"
+		/>
+		<field
+			name="ativo"
+			type="radio"
+			class="radio btn-group"
+			label="Mostrar desconto?"
+			default="0"
+			description="Se o desconto esta ativo ou não no sistema"
+		>
+			<option value="1">Sim</option>
+			<option value="0">Não</option>
+		</field>
+	</fieldset>
+</form>

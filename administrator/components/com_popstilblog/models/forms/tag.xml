@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="detalhes_tag">
+		<field 
+			name="id"
+			type="hidden"
+		/>
+		<field 
+			name="titulo"
+			type="text"
+			class="inputbox"
+			label="O titulo da tag"
+			description="O titulo que irá aparecer no site"
+			size="40"
+			default=""
+			required="true"
+		/>
+		<field
+			name="descricao"
+			type="text"
+			class="inputbox"
+			label="A descrição da tag"
+			description="Uma breve descrição da tag."
+		/>
+		<field
+			name="status"
+			type="radio"
+			class="radio btn-group"
+			label="Mostrar tag?"
+			default="1"
+			description="Se a tag esta ativo ou não no sistema"
+		>
+			<option value="1">Sim</option>
+			<option value="0">Não</option>
+		</field>
+	</fieldset>
+</form>

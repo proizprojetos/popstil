@@ -1,0 +1,46 @@
+#tabs_sobre {
+	margin-bottom: 200px;
+}
+#tela_sobre .texto {
+	padding: 10px 0px;
+	text-align: left;
+	font: normal 14px Tahoma;
+	color: #58595b;
+}
+
+#tela_sobre h4{
+	text-transform: uppercase;
+	font: normal 25px "din_cond_bold", Tahoma;
+	color: #58595b;
+}
+
+#tabs_sobre .tabs_sobre_menu {
+	list-style: none;
+	margin-left: 0px;
+}
+#tabs_sobre .tabs_sobre_menu li {
+	display: inline;
+	background: #4e4b48;
+	padding: 10px 0px;
+	margin-right: 1px;
+}
+#tabs_sobre .tabs_sobre_menu .ui-state-active {
+	background: #41c4dd;
+}
+#tabs_sobre ul li a {
+	font: normal 15px "din_light";
+	color: #fff !important;
+	padding: 10px 30px;
+}
+#tabs_sobre ul li a:hover {
+	text-decoration: none;
+}
+#tabs_sobre ul li a:focus {
+	outline: none !important;
+	text-decoration: none;
+}
+.cabecalho_popstil {
+	background: url("../img/fd_padrao.png") repeat !important;
+	padding: 70px 0px 70px 0px;
+	margin-top: -30px;
+}

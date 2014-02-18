@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="detalhes_usuario">
+		<field 
+			name="id"
+			type="hidden"
+		/>
+		<field 
+			name="mensagem"
+			type="text"
+			class="inputbox"
+			label="Mensagem do slider"
+			description="Mensagem que ira aparecer no slider"
+			size="40"
+			default=""
+			required="true"
+		/>
+	</fieldset>
+</form>

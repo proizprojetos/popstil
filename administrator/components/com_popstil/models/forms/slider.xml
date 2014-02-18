@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="detalhes_slider">
+		<field 
+			name="id"
+			type="hidden"
+		/>
+		<field 
+			name="mensagem"
+			type="text"
+			class="inputbox"
+			label="Mensagem do slider"
+			description="Mensagem que ira aparecer no slider"
+			size="40"
+			default=""
+		/>
+		<field
+			name="url_imagem"
+			type="media"
+			directory="sliders"
+			class="inputbox"
+			label="Imagem do slider"
+			description="Imagem do slider"
+			required="true"
+		/>
+		<field 
+			name="link_slider"
+			type="text"
+			class="inputbox"
+			label="Link do slider"
+			description="Link que o slider vai possuir"
+			size="40"
+		/>
+		<field
+			name="mostrar_botao"
+			type="radio"
+			class="radio btn-group"
+			label="Mostrar botão?"
+			default="1"
+			description="Se o botão sera mostrado ou não no slider"
+		>
+			<option value="1">Sim</option>
+			<option value="0">Não</option>
+		</field>
+		<field
+			name="ativo"
+			type="radio"
+			class="radio btn-group"
+			label="Mostrar slider?"
+			default="1"
+			description="Se o slider sera mostrado ou não na apresentação"
+		>
+			<option value="1">Sim</option>
+			<option value="0">Não</option>
+		</field>
+		<field
+			name="inicio_publicacao"
+			type="calendar"
+			format="%d-%m-%Y %H:%M:%S"
+			class="inputbox"
+			size="22"
+			filter="user_utc"
+			label="Inicio da publicação"
+			description="A partir de que dia o slider será visivel?"
+			required="true"
+		/>
+		<field
+			name="fim_publicacao"
+			type="calendar"
+			format="%d-%m-%Y %H:%M:%S"
+			class="inputbox"
+			size="22"
+			filter="user_utc"
+			label="Fim da publicação"
+			description="Até que dia o slider será visivel?"
+			required="true"
+			default="05-10-2020"
+		/>
+	</fieldset>
+</form>

@@ -1,0 +1,459 @@
+﻿/*Importação das fontes utilizadas na pagina*/
+@font-face {
+	font-family: din_light;
+	src: url('../fonts/ff_din_light-webfont.woff'),
+		url('../fonts/ff_din_light-webfont.eot');
+}
+@font-face {
+	font-family: din_regular;
+	src: url('../fonts/ff_din_regular-webfont.woff'),
+		 url('../fonts/ff_din_regular-webfont.eot');
+}
+@font-face {
+	font-family: din_black;
+	src: url('../fonts/ff_din_black-webfont.woff'),
+		url('../fonts/ff_din_black-webfont.eot');
+}
+
+.tamanhos_quadros {
+	width: 95px;
+	float: left;
+	padding-top: 0px !important;
+	padding-left: 20px;
+}
+.hide {
+	display:none;
+}
+
+
+/** droparea **/
+.droparea {
+	text-align: center;
+	position: relative;
+	background: url('../img/camera_upload.png') 5px 5px no-repeat;
+	margin-bottom: 40px;
+	
+}
+#preview {
+	width: 230px;
+	height: 230px;
+	border: 1px solid #ddd;
+	opacity: 0.8;	
+}
+#textopreview {
+	margin: 50px 10px 40px 10px;
+	line-height: 19.6px;
+	font-family: 'Verdana';
+	font-size: 10px;
+	color: #58595b;
+}
+.droparea input {
+	cursor: pointer;
+	position: absolute;
+	--top: 0;
+	
+	left: 0;
+	width: 100% !important;
+	--height: 100% !important;
+}
+#inputdropareainvisible {
+	position:absolute;
+	top: 0;
+	opacity: 0;
+	height: 100%;
+}
+
+.mensagem_foto {
+	text-align:left;
+	font-family: "Verdana";
+}
+.mensagem_foto p {
+	color: #ff0000;
+	font-size: 12px;
+	margin: 10px 0px 0px 0px;	
+}
+.mensagem_foto ul {
+	color: #58595b;
+	margin: 0px 35px 0px 15px;
+	font-size: 11px;
+}
+.dicas_imagem {
+	text-align: left;
+}
+.dicas_imagem h3 {
+	font-family: "din_light";
+	font-size: 24px;
+	color: #58595b;
+	line-height: 31.6px;
+	margin-bottom: 20px;
+}
+.dicas_imagem h4 {
+	font-family: "din_black";
+	font-size: 14px;
+	line-height: 19.6px;
+	color: #58595b;
+}
+.dicas_imagem span {
+	font-family: "din_light";
+	font-size: 12px;
+	line-height: 19.6px;
+	color: #58595b;
+}
+.dicas_imagem a, .dicas_imagem a:hover  {
+	font-family: "din_light";
+	font-size: 18px;
+	line-height: 9.6px;
+	color: #41c4dd
+}
+/** fim do droparea **/
+.customizacao h3 {
+	font-family: 'din_light';
+	font-size: 18px;
+	line-height: 25.6px;
+	color: #58595b;
+}
+.div_tamanhos p{
+	font-family: 'Verdana';
+	font-size: 12px;
+	color: #58595b;
+}
+.div_tamanhos #textoQuad, .div_tamanhos #textoReta{
+	font-family: 'Verdana';
+	font-size: 18px;
+	color: #58595b;
+}
+/** div tamanhos **/
+.quad > div, .reta > div {
+	cursor: pointer;
+}
+.div_tamanhos {
+	border: 1px solid #d1d3d4;
+	height: 175px;
+	background: #f5f5f5;
+}
+.wrap_quad, .wrap_quadrados{
+height: 200px;
+width: 50%;
+float: left;
+}
+.quad {
+	text-align: center;
+	margin: 0 auto;
+	width: 110px;
+	height: 150px;
+	float: left;
+	margin: 15px 45px 0px 10px
+}
+.texto_reta, .texto_quad {
+	margin-top: 50px;
+}
+/*#quad3 {
+	margin: 24px;
+}
+#quad2 {
+	margin: 12px;
+}*/
+#quad1 {
+	margin: 45px;
+}
+#quad2 {
+	margin: 38px;
+}
+#quad3 {
+	margin: 24px;
+}
+#quad4 {
+	margin: 10px;
+}
+#quadpai>div {
+	
+	border: 1px solid #000;
+	position: absolute;
+}
+
+.wrap_reta, .wrap_retangulos {
+	height: 200px;
+	float: right;
+	width: 49%;
+}
+.reta {
+	text-align: center;
+	margin: 0 auto;
+	width: 110px;
+	height: 150px;
+	float: left;
+	margin: 30px 60px 0px 0px;
+}
+#retapai>div {
+	border: 1px solid #000;
+	position: absolute;
+}
+#reta3 {
+	margin: 23px;
+}
+#reta2 {
+	margin: 12px;
+}
+/** fim da div tamanhos **/
+/*DIV NUMERO DE PESSOAS*/
+.num_pessoas {
+	border : 1px solid #d1d3d4;
+	background: #f5f5f5;
+	height: 80px;
+}
+.num_pessoas ul {
+	list-style-type:none;
+}
+.num_pessoas-wrap {
+	margin: 30px 0px 30px 0px;
+	display: block;
+	width: 50%;
+	float: left;
+}
+.num_pessoas li{
+	display:inline;
+	background: url('../img/icon-pessoas.png') -16px 0px no-repeat;
+	padding: 10px 4px 10px 0px;
+	color: transparent;
+}
+.num_pessoas li:hover {
+	background: url('../img/icon-pessoas.png') 0px 0px no-repeat;
+	cursor: pointer;
+}
+#num_pessoas_selecionado {
+	border : 1px solid #d1d3d4;	
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin: 15px 15px 10px 0px;
+}
+#num_pessoas_selecionado p{
+	margin: 15px 0px 0px 16px;
+	font-size: 30px;
+}
+.num_pessoas h1 {
+	font-size: 11px;
+	line-height: 15px;
+	padding-top: 15px;
+}
+.numPessoas-demo{
+	pointer-events:none;
+}
+
+.num_pessoas-wrap >ul>li {
+	display: none;
+}
+
+/*FIM DIV NUMERO DE PESSOAS*/
+/*DIV COR DA MOLDURA*/
+.cor_moldura {
+	border : 1px solid #d1d3d4;
+	background: #f5f5f5;
+	height: 80px;
+	text-align: center;
+}
+.cor_moldura .cor_moldura_wrap {
+	width: 49%;
+	float: left;
+	
+	height: 100%;
+	display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.cor_moldura .cor_moldura_wrap span {
+    display: inline-block;
+    height: 100%;
+    width: 1px;
+}
+
+.cor_moldura .cor_moldura_wrap * {
+    vertical-align: middle;
+}
+.cor_moldura .cor_moldura_wrap img {
+	cursor: pointer;
+	padding: 3px 3px 3px 7px;
+}
+.cor_moldura_wrap img:hover, .cor_moldura_selected {
+	background: url('../img/moldura_hover.png') 0px 0px no-repeat !important;
+	
+}
+
+/*fim DA DIV COR DA MOLDURA*/
+
+/*DIV FUNDOS */
+#tabs{
+	list-style-type:none;
+	background: #41c4dd;
+	padding-top: 5px;
+	margin-bottom: -1px;
+	border: 1px solid #DDD
+}
+#tabs>li>a {
+	border-radius: 0px !important;
+	-webkit-border-radius: 0px !important;
+	-moz-border-radius: 0px !important;
+	border: none;
+	margin-right: 0px;
+}
+#tabs li a:hover {
+	background-color: transparent !important;
+	
+}
+#tabs .active a:hover {
+	background-color: #fff !important;
+}
+#tabs li {
+	display: inline;
+	width: 50%;
+	margin-bottom: 0px;
+}
+#tabs li p {
+	margin-left: 15px;
+}
+#tabs>li p {
+	font-family: "Verdana";
+	font-size: 16px;
+	:line-height: 13.6px;
+	color: #fff;
+}
+#tabs>.active p {
+	color: #41c4dd;
+}
+
+#myTabContent {
+	border: 1px solid #DDD;
+	border-top: none;
+	
+}
+
+#myTabContent>div {
+	margin: 15px;
+}
+#myTabContent .tabcontent p {
+	font-size: 16px;
+}
+#myTabContent .cores {
+
+}
+#myTabContent .cor {
+	width: 80px;
+	height: 80px;
+	:border: 1px solid;
+	float:left;
+	margin: 10px 10px 10px 10px;
+}
+
+/*FIM DA DIV FUNDOS*/
+/*DIV CORES*/
+#cores .cor span {
+	display: inline-table;
+	width: 100%;
+	height: 100%;
+}
+#cores .cor span:hover {
+	moz-box-shadow: inset 0px 0px 0px 5px white !important;
+	-webkit-box-shadow: inset 0px 0px 0px 5px white !important;
+	box-shadow: inset 0px 0px 0px 5px white !important;
+}
+
+/*FIM DA DIV CORES*/
+
+
+/*DIV TOTAL*/
+.total {
+	text-align:center;
+	width: 200px !important;
+}
+.total h2 {
+	font-family:'din_light';
+	font-size: 30px;
+	color: #58595b;
+	line-height: 20px;	
+}
+.total h3 {
+	font-family:'din_light';
+	font-size: 18px;
+	color: #58595b;
+	line-height: 26px;	
+}
+/*FIM DA DIV TOTAL*/
+
+/*NUMERO DE QUADROS*/
+.bt_num_quadros {
+	cursor: pointer;
+	border-top: 1px solid #111;
+	border-left: 1px solid #111;
+	padding: 3px 8px 3px 6px;
+	background: orange;
+	color: white;
+	-webkit-box-shadow: 2px 2px 3px 0px #a3a3a5;
+	-moz-box-shadow: 2px 2px 3px 0px #a3a3a5;
+	box-shadow: 2px 2px 3px 0px #a3a3a5;
+}
+.bt_num_quadros:hover {
+	text-decoration: none;
+	color: white;
+}
+#numero_quadros {
+	margin-left: 7px;
+	border: 1px solid #000;
+	padding: 3px 10px 4px 10px;
+}
+
+/*FIM DO NUMERO DE QUADROS*/
+
+/*ESTILO DO CADASTRO DE USUARIO*/
+#corpo_cadastro h3 {
+	line-height: 20px;
+	font-weight: normal;
+	font-family:'din_light';
+	font-size: 24px;
+	color: #58595b;
+}
+.cadastro_input {
+	margin: 10px 0px 10px 0px;
+	display: inline-block;
+}
+.cadastro_input  input[type="text"]{
+	background: #f1f2f2;
+	padding: 5px 3px 5px 10px;
+	border-radius: 0;
+}
+.cadastro_input select {
+	padding: 5px 5px 5px 5px !important;
+	border-radius: 0;
+	background: #f1f2f2;
+}
+.cadastro_input  input[type="radio"]{
+	margin: 10px;
+	
+	
+	border-radius: 0;
+}
+.msgCadastro img {
+	float: left;
+}
+.msgCadastroTexto {
+	margin: 55px 70px 0 160px;
+}
+.msgCadastroTexto h2 {
+	line-height: 44px;
+	font-weight: normal;
+	font-family:'din_light';
+	font-size: 36px;
+	color: #58595b;
+}
+.msgCadastroTexto h4 {
+	margin-top: 35px;
+	line-height: 24px;
+	font-weight: normal;
+	font-family:'din_light';
+	font-size: 18px;
+	color: #58595b;
+}
+.msgCadastroTexto>h2>p {
+	display: inline;
+	color: #41c4dd;
+}
+/*FIM DO CADASTRO DE USUARIO*/

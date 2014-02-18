@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+	<fieldset name="default"
+		label="COM_POPSTIL_REGISTRATION_DEFAULT_LABEL" >
+		
+		<field name="idpedido" 
+			type="text"
+			label="COM_POPSTIL_PEDIDO_ID_LABEL"
+			message="COM_POPSTIL_PEDIDO_ID_MESSAGE"
+			size="11" />
+		
+		<field name="popstil_usuario_idusuario" 
+			type="text"
+			label="COM_POPSTIL_REGISTER_IDUSUARIO_LABEL"
+			message="COM_POPSTIL_REGISTER_IDUSUARIO_MESSAGE"
+			size="11" />
+		
+		<field name="datagravacao" 
+			type="calendar"
+			label="COM_POPSTIL_REGISTER_DATAGRAVACAO_LABEL"
+			message="COM_POPSTIL_REGISTER_DATAGRAVACAO_MESSAGE"
+			format="$d-%m-%Y" />
+		
+		<field name="status_pedido" 
+			type="text"
+			label="COM_POPSTIL_REGISTER_STATUS_LABEL"
+			message="COM_POPSTIL_REGISTER_STATUS_MESSAGE"
+			size="11" />
+			
+		<field name="valortotal" 
+			type="text"
+			label="COM_POPSTIL_REGISTER_VALORTOTAL_LABEL"
+			message="COM_POPSTIL_REGISTER_VALORTOTAL_MESSAGE"
+			size="11" />
+		
+		<field name="codigo_desconto" 
+			type="text"
+			label="COM_POPSTIL_REGISTER_CODIGO_DESCONTO_LABEL"
+			message="COM_POPSTIL_REGISTER_CODIGO_DESCONTO_MESSAGE"
+			size="100" />
+		
+	</fieldset>
+</form>

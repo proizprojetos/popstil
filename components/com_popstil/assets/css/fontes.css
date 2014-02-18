@@ -1,0 +1,38 @@
+@font-face {
+	font-family: din_light;
+	src: url('../fonts/ff_din_light-webfont.woff'),
+		url('../fonts/ff_din_light-webfont.eot'),
+		url('../fonts/ff_din_light-webfont.ttf');
+}
+@font-face {
+	font-family: din_regular;
+	src: url('../fonts/ff_din_regular-webfont.woff'),
+		 url('../fonts/ff_din_regular-webfont.eot'),
+ 		 url('../fonts/ff_din_regular-webfont.ttf');
+}
+@font-face {
+	font-family: din_black;
+	src: url('../fonts/ff_din_black-webfont.woff'),
+		url('../fonts/ff_din_black-webfont.eot'),
+		url('../fonts/ff_din_black-webfont.ttf');
+}
+@font-face {
+	font-family: din_cond_black;
+	src: url('../fonts/FF_DIN_Condensed_Black.otf'),
+		url('../fonts/ff_din_condensed_black.ttf');
+}
+@font-face {
+	font-family: din_cond_bold;
+	src: url('../fonts/FF_DIN_Condensed_Bold.oft'),
+		url('../fonts/ff_din_condensed_bold.ttf');
+}
+@font-face {
+	font-family: din_cond_regular;
+	src: url('../fonts/FF_DIN_Condensed_Bold.oft'),
+		url('../fonts/ff_din_regular-webfont.ttf');
+}
+@font-face {
+	font-family: din_medium_alternate;
+	src: url('../fonts/FF_DIN_Condensed_Medium_Alternative.oft'),
+		url('../fonts/ff_din_medium_alternate-webfont.ttf');
+}

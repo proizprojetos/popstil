@@ -1,0 +1,204 @@
+@font-face {
+	font-family: din_cond_medium;
+	src:url('../fonts/din_cond_medium.otf'),
+		url('../fonts/din_cond_medium.ttf');
+}
+@font-face {
+	font-family: din_light;
+	src:url('../fonts/din_light.woff'),
+		url('../fonts/din_light.ttf');
+} 
+@font-face {
+	font-family: din_cond_medium_alter;
+	src:url('../fonts/din_cond_medium_alter.woff'),
+		url('../fonts/din_cond_medium_alter.ttf');
+}
+
+body {
+	padding: 0px !important;
+}
+.corpo_blog {
+	background: #e6e7e8 url('../img/bg_branco.png') repeat-x;
+	background-size: 3px;
+}
+.corpo_blog {
+	padding-bottom: 100px;
+}
+/*Parte da div compartilhar presente em todos as paginas do blog*/
+.blog_compartilhar {
+	margin-top: 100px;
+	margin-bottom: 25px;
+ 	padding: 25px 10px;
+ 	background: #fff;
+ 	border: 1px solid #dcddde;
+}
+.blog_compartilhar h2 {
+	font: normal 2.0em/1.5em "din_cond_medium", Tahoma;
+	color: #41c4dd;
+	text-transform: uppercase;
+}
+.blog_compartilhar p, .blog_compartilhar a, .blog_compartilhar a:hover {
+	font: normal 1.1em/1.5em "din_cond_medium", Tahoma;
+	color: #4e4b48;
+	padding-right: 30px;
+	text-decoration:none;
+}
+.blog_compartilhar h1 {
+	font: normal 2em/1.4em "din_cond_medium", Tahoma;
+	color: #4e4b48;
+}
+.blog_compartilhar form {
+	margin-top: 30px;
+}
+.blog_compartilhar form input[type='text'] {
+	padding: 10px;
+	background-color: #f1f2f2;
+	border: 1px solid #eaeaea;
+	font: normal 1em/1.5em "din_light", Tahoma;
+	color: #939598;
+	width: 85%;
+	border-radius: 0px;
+}
+.blog_compartilhar form input[type='submit'] {
+	padding: 10px 12px;
+	background-color: #41c4dd;
+	color: #fff;
+	border: none;
+	margin-left: -49px;
+	font-size: 15px;
+	margin-top: -10px;
+	padding-bottom: 10px;
+	
+}
+.blog_compartilhar .linha {
+	margin: 0 2em;
+}
+.blog_compartilhar .linha>div:last-child{
+	margin-right: 0px;
+}
+/*FIM do compartilhar*/
+
+
+
+/*Menu das categorias*/
+.blog_menu_categorias {
+	text-align: center;
+	margin: 0px 0px 20px;
+	
+}
+.blog_menu_categorias ul {
+	height: 50px;
+}
+.blog_menu_categorias ul li{
+	display: inline;
+	margin: 10px 10px;
+	text-transform: uppercase;
+	font: normal 1.8em/1.5em "din_cond_medium", Tahoma;
+}
+.blog_menu_categorias ul li a{
+	display: inline-table;
+	color: #4e4b48;
+}
+.blog_menu_categorias ul li a:hover{
+	text-decoration: none;
+	margin-top: 10px;
+}
+.blog_menu_categorias ul li .ativo {
+	margin-top: 10px;
+}
+
+.blog_topo{
+	text-align: center;
+}
+
+/*@media screen and (max-width: 950px) {*/
+@media screen and (max-width: 1300px) {
+	.blog_menu_categorias ul {
+		display: none;
+		position: absolute;
+		padding: 20px;
+		background: #fff;
+		border: 5px solid #444;
+		right: 20px;
+		top: 60px;
+		width: 50%;
+		border-radius: 4px 0 4px 4px;
+	}
+	.blog_menu_categorias li {
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+	}
+	.blog_menu_categorias ul:hover {
+		display: block;
+	}
+	/*.blog_menu_categorias {
+		min-height: 60px
+	}
+	.blog_menu_categorias {
+		position: relative;
+		min-height: 40px;
+		margin: 0px;
+		margin-top: 0px !important;		
+		border: 5px solid #444;
+	}
+	.blog_menu_categorias {
+		width: 180px;
+		position: absolute;
+		//top: 0;
+		//left: 0;
+		border: 5px solid #444;
+	}
+	.blog_menu_categorias ul {
+		display: none;
+		margin: 0;
+	}
+	.blog_menu_categorias li a {
+		padding: 18px 15px 17px 15px !important;
+		display: block !important;
+	}
+	blog_menu_categorias .ativo {
+		display: block !important; 
+	}
+	
+	.blog_menu_categorias ul:hover  {
+		display: block !important;
+	}*/
+	/*.menumenuinterno {
+		position: relative;
+		min-height: 40px;
+		margin: 0px;
+		margin-top: 0px !important;
+		margin-right: -100px !important;
+	}
+	
+	.menumenuinterno {
+		width: 180px;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.menumenuinterno li {
+		display: none !important;
+		margin: 0;
+	}
+	.menumenuinterno li {
+		padding: 0px !important;
+	}
+	.menumenuinterno li a {
+		padding: 18px 15px 17px 15px !important;
+		display: block !important;
+	}
+	.menumenuinterno .current {
+		display: block !important; 
+	}
+	.menumenuinterno:hover {
+		background-image: none;
+	}
+	.menumenuinterno:hover li {
+		display: block !important;
+	}
+	*/
+}
+/*Fim do menu das categorias*/

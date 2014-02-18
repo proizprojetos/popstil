@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="detalhes_categoria">
+		<field 
+			name="id"
+			type="hidden"
+		/>
+		<field 
+			name="titulo"
+			type="text"
+			class="inputbox"
+			label="O titulo da tag"
+			description="O titulo que irá aparecer no site"
+			size="40"
+			default=""
+			required="true"
+		/>
+		<field
+			name="descricao"
+			type="text"
+			class="inputbox"
+			label="A descrição da tag"
+			description="Uma breve descrição da tag."
+		/>
+		<field
+			name="status"
+			type="radio"
+			class="radio btn-group"
+			label="Esta ativo?"
+			default="1"
+			description="Se o desconto esta ativo ou não no sistema"
+		>
+			<option value="1">Sim</option>
+			<option value="0">Não</option>
+		</field>
+		
+		<field 
+			name="metakey"
+			type="text"
+			class="inputbox"
+			label="Palavras-chave"
+			description="Uma lista opcional, separada por vírgulas, de palavras-chave ou frases para serem usadas na saída HTML."
+			size="250"
+		/>
+		
+		<field 
+			name="cor_tema"
+			type="text"
+			class="inputbox color"
+			label="Cor do tema"
+			description="Codigo em hexadecimal referente a cor do tema, que será usado em todo o site."
+			size="10"
+			required="true"
+		/>
+		
+		<field
+			name="inicio_publicacao"
+			type="calendar"
+			format="%d-%m-%Y %H:%M:%S"
+			class="inputbox"
+			size="22"
+			filter="user_utc"
+			label="Inicio da publicação"
+			description="A partir de que dia o slider será visivel?"
+			required="true"
+		/>
+		<field
+			name="fim_publicacao"
+			type="calendar"
+			format="%d-%m-%Y %H:%M:%S"
+			class="inputbox"
+			size="22"
+			filter="user_utc"
+			label="Fim da publicação"
+			description="Até que dia o slider será visivel?"
+			required="true"
+			default="05-10-2020"
+		/>
+		
+		
+		
+	</fieldset>
+</form>

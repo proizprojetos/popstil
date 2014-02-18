@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="detalhes_fundopadraografico">
+		<field 
+			name="id"
+			type="hidden"
+		/>
+		<field 
+			name="id_fundo"
+			type="hidden"
+		/>
+		<field 
+			name="descricao"
+			type="text"
+			class="inputbox"
+			label="A descricao da sub categoria"
+			description="A descricao da sub categoria"
+			size="40"
+			default=""
+			required="true"
+		/>
+		<field 
+			name="id_subcategoria" 
+			type="fundosubcategoria" 
+			label="SubCategoria do fundo" 
+			description="A qual sub categoria esse subgrupo pertence"
+			class="inputbox" 
+			required="true"
+			addfieldpath="/administrator/components/com_popstil/models/fields"
+		/>
+		<field
+			name="url_imagem"
+			type="media"
+			directory="fundos"
+			class="inputbox"
+			label="Imagem do padrao grafico"
+			description="Imagem do padrao grafico"
+			required="true"
+		/>
+		<field
+			name="ativo"
+			type="radio"
+			class="radio btn-group"
+			label="Mostrar subcategoria?"
+			default="1"
+			description="Se a subcategoria esta ativo ou não no sistema"
+		>
+			<option value="1">Sim</option>
+			<option value="0">Não</option>
+		</field>
+	</fieldset>
+</form>

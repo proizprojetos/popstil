@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="detalhes_fundocorsolida">
+		<field 
+			name="id"
+			type="hidden"
+		/>
+		<field 
+			name="id_fundo"
+			type="hidden"
+		/>
+		<field 
+			name="codigo_cor"
+			type="text"
+			class="inputbox color"
+			label="A codigo em HEX da cor(sem # )"
+			description="Insina apenas o codigo sem #"
+			size="40"
+			default=""
+			required="true"
+		/>
+		<field
+			name="ativo"
+			type="radio"
+			class="radio btn-group"
+			label="Mostrar desconto?"
+			default="0"
+			description="Se o desconto esta ativo ou não no sistema"
+		>
+			<option value="1">Sim</option>
+			<option value="0">Não</option>
+		</field>
+	</fieldset>
+</form>

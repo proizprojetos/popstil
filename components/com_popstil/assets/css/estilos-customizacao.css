@@ -1,0 +1,551 @@
+﻿/*Importação das fontes utilizadas na pagina*/
+@font-face {
+	font-family: din_light;
+	src: url('../fonts/ff_din_light-webfont.woff'),
+		url('../fonts/ff_din_light-webfont.eot'),
+		url('../fonts/ff_din_light-webfont.ttf');
+}
+@font-face {
+	font-family: din_regular;
+	src: url('../fonts/ff_din_regular-webfont.woff'),
+		 url('../fonts/ff_din_regular-webfont.eot'),
+ 		 url('../fonts/ff_din_regular-webfont.ttf');
+}
+@font-face {
+	font-family: din_black;
+	src: url('../fonts/ff_din_black-webfont.woff'),
+		url('../fonts/ff_din_black-webfont.eot'),
+		url('../fonts/ff_din_black-webfont.ttf');
+}
+
+.tamanhos_quadros {
+	width: 95px;
+	float: left;
+	padding-top: 0px !important;
+	padding-left: 20px;
+}
+.hide {
+	display:none;
+}
+
+
+/** droparea
+.droparea {
+	text-align: center;
+	position: relative;
+	background: url('../img/camera_upload.png') 5px 5px no-repeat;
+	margin-bottom: 40px;
+	
+}
+#preview {
+	width: 230px;
+	height: 230px;
+	border: 1px solid #ddd;
+	opacity: 0.8;	
+}
+#textopreview {
+	margin: 50px 10px 40px 10px;
+	line-height: 19.6px;
+	font-family: 'Verdana';
+	font-size: 10px;
+	color: #58595b;
+}
+.droparea input {
+	cursor: pointer;
+	position: absolute;
+	--top: 0;
+	
+	left: 0;
+	width: 100% !important;
+	--height: 100% !important;
+}
+#inputdropareainvisible {
+	position:absolute;
+	top: 0;
+	opacity: 0;
+	height: 100%;
+}
+
+
+.mensagem_foto {
+	text-align:left;
+	font-family: "Verdana";
+}
+.mensagem_foto p {
+	color: #ff0000;
+	font-size: 12px;
+	margin: 10px 0px 0px 0px;	
+}
+.mensagem_foto ul {
+	color: #58595b;
+	margin: 0px 35px 0px 15px;
+	font-size: 11px;
+}
+.dicas_imagem {
+	text-align: left;
+}
+.dicas_imagem h3 {
+	font-family: "din_light";
+	font-size: 24px;
+	color: #58595b;
+	line-height: 31.6px;
+	margin-bottom: 20px;
+}
+.dicas_imagem h4 {
+	font-family: "din_black";
+	font-size: 14px;
+	line-height: 19.6px;
+	color: #58595b;
+}
+.dicas_imagem span {
+	font-family: "din_light";
+	font-size: 12px;
+	line-height: 19.6px;
+	color: #58595b;
+}
+.dicas_imagem a, .dicas_imagem a:hover  {
+	font-family: "din_light";
+	font-size: 18px;
+	line-height: 9.6px;
+	color: #41c4dd
+}
+/** fim do droparea 
+.customizacao h3 {
+	font-family: 'din_light';
+	font-size: 18px;
+	line-height: 25.6px;
+	color: #58595b;
+}
+.div_tamanhos p{
+	font-family: 'Verdana';
+	font-size: 12px;
+	color: #58595b;
+}
+.div_tamanhos #textoQuad, .div_tamanhos #textoReta{
+	font-family: 'Verdana';
+	font-size: 18px;
+	color: #58595b;
+}
+/** div tamanhos 
+.quad > div, .reta > div {
+	cursor: pointer;
+}
+.div_tamanhos {
+	border: 1px solid #d1d3d4;
+	height: 175px;
+	background: #f5f5f5;
+}
+.wrap_quad, .wrap_quadrados{
+height: 200px;
+width: 50%;
+float: left;
+}
+.quad {
+	text-align: center;
+	margin: 0 auto;
+	width: 110px;
+	height: 150px;
+	float: left;
+	margin: 15px 45px 0px 10px
+}
+.texto_reta, .texto_quad {
+	margin-top: 50px;
+}
+/*#quad3 {
+	margin: 24px;
+}
+#quad2 {
+	margin: 12px;
+}*/
+#quad1 {
+	margin: 45px;
+}
+#quad2 {
+	margin: 38px;
+}
+#quad3 {
+	margin: 24px;
+}
+#quad4 {
+	margin: 10px;
+}
+#quadpai>div {
+	
+	border: 1px solid #000;
+	position: absolute;
+}
+/**
+
+.reta {
+	text-align: center;
+	margin: 0 auto;
+	width: 110px;
+	height: 150px;
+	float: left;
+	margin: 10px 60px 0px 0px;
+}
+#retapai>div {
+	border: 1px solid #000;
+	position: absolute;
+}
+#reta3 {
+	margin: 23px;
+}
+#reta2 {
+	margin: 12px;
+}
+/** fim da div tamanhos **/
+/*DIV NUMERO DE PESSOAS
+
+.num_pessoas ul {
+	list-style-type:none;
+}
+.num_pessoas-wrap {
+	margin: 30px 0px 30px 0px;
+	display: block;
+	width: 50%;
+	float: left;
+}
+.num_pessoas li{
+	display:inline;
+	background: url('../img/icon-pessoas.png') -16px 0px no-repeat;
+	padding: 10px 4px 10px 0px;
+	color: transparent;
+}
+.num_pessoas li:hover {
+	background: url('../img/icon-pessoas.png') 0px 0px no-repeat;
+	cursor: pointer;
+}
+#num_pessoas_selecionado {
+	border : 1px solid #d1d3d4;	
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin: 15px 15px 10px 0px;
+}
+#num_pessoas_selecionado p{
+	margin: 15px 0px 0px 16px;
+	font-size: 30px;
+}
+.num_pessoas h1 {
+	font-size: 11px;
+	line-height: 15px;
+	padding-top: 15px;
+}
+.numPessoas-demo{
+	pointer-events:none;
+}
+
+/*.num_pessoas-wrap >ul>li {
+	display: none;
+}*/
+
+/*FIM DIV NUMERO DE PESSOAS*/
+/*DIV COR DA MOLDURA
+.cor_moldura {
+	border : 1px solid #d1d3d4;
+	background: #f5f5f5;
+	height: 80px;
+	text-align: center;
+}
+.cor_moldura .cor_moldura_wrap {
+	width: 49%;
+	float: left;
+	
+	height: 100%;
+	display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.cor_moldura .cor_moldura_wrap span {
+    display: inline-block;
+    height: 100%;
+    width: 1px;
+}
+
+.cor_moldura .cor_moldura_wrap * {
+    vertical-align: middle;
+}
+.cor_moldura .cor_moldura_wrap img {
+	cursor: pointer;
+	padding: 3px 3px 3px 7px;
+}
+.cor_moldura_wrap img:hover, .cor_moldura_selected {
+	background: url('../img/moldura_hover.png') 0px 0px no-repeat !important;
+	
+}
+
+/*fim DA DIV COR DA MOLDURA*/
+
+/*DIV FUNDOS */
+.plano_fundo ul {
+	margin-bottom: 0px !important;
+	border-bottom: none !important;
+	border: none;
+}
+.plano_fundo .tab-content {
+	background: #f5f5f5 !important;
+	border: none !important;
+}
+.plano_fundo .ui-state-active, .plano_fundo .ui-state-active a {
+	background: #f5f5f5 !important;
+}
+.plano_fundo li>a:hover, .plano_fundo li>a:focus {
+	background-color: transparent !important;
+	border-color: transparent !important;
+}
+.plano_fundo li>a:focus, .plano_fundo select:focus {
+	outline: none;
+	outline: none;
+	outline-offset: 0px;
+}
+.plano_fundo li p {
+	font-family: "Verdana";
+	font-size: 16px;
+	color: #fff;
+}
+.plano_fundo .ui-state-active p {
+	color: #41c4dd;
+}
+#tabs{
+	list-style-type:none;
+	background: #41c4dd;
+	padding-top: 5px;
+	margin-bottom: -1px;
+	border: 1px solid #DDD
+}
+#tabs>li>a {
+	border-radius: 0px !important;
+	-webkit-border-radius: 0px !important;
+	-moz-border-radius: 0px !important;
+	border: none;
+	margin-right: 0px;
+}
+#tabs li {
+	display: inline;
+	width: 50%;
+	margin-bottom: 0px;
+}
+#tabs li p {
+	margin-left: 15px;
+}
+#tabs>li p {
+	font-family: "Verdana";
+	font-size: 16px;
+	line-height: 13.6px;
+	color: #fff;
+}
+#tabs>.active p {
+	color: #41c4dd;
+}
+
+#myTabContent {
+	border: 1px solid #DDD;
+	border-top: none;
+	
+}
+
+#myTabContent>div {
+	margin: 15px;
+}
+#myTabContent .tabcontent p {
+	font-size: 16px;
+}
+#myTabContent .cores {
+
+}
+#myTabContent .cor {
+	width: 80px;
+	height: 80px;
+	/*border: 1px solid;*/
+	float:left;
+	margin: 10px 10px 10px 10px;
+}
+#myTabContent .padraograficos select {
+	width: 190px;
+	background-color: #FFF !important;
+}
+#myTabContent .padraograficos {
+	text-align: center;
+}
+#tabs .active a, {
+	background: #f5f5f5 !important;
+}
+#myTabContent .padraograficos .grafico_imagem {
+	display: inline-block;
+}
+
+#myTabContent .padraograficos .grafico_imagem img{
+	width: 200px;
+	height: 187px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+/*FIM DA DIV FUNDOS*/
+/*DIV CORES*/
+#cores .cor span {
+	display: inline-table;
+	width: 100%;
+	height: 100%;
+}
+#cores .cor span:hover {
+	-moz-box-shadow: inset 0px 0px 0px 5px #f5f5f5 !important;
+	-webkit-box-shadow: inset 0px 0px 0px 5px #f5f5f5 !important;
+	box-shadow: inset 0px 0px 0px 5px #f5f5f5 !important;
+}
+
+/*FIM DA DIV CORES*/
+
+
+
+
+/*NUMERO DE QUADROS*/
+.bt_num_quadros {
+	cursor: pointer;
+	border: 1px solid #d58400;
+	padding: 3px 8px 3px 6px;
+	background: orange;
+	color: white;
+	-webkit-box-shadow: 2px 2px 3px 0px #a3a3a5;
+	-moz-box-shadow: 2px 2px 3px 0px #a3a3a5;
+	box-shadow: 2px 2px 3px 0px #a3a3a5;
+}
+.bt_num_quadros:hover {
+	text-decoration: none;
+	color: white;
+}
+#numero_quadros {
+	
+	margin-left: 7px;
+	border: 1px solid #000;
+	padding: 3px 10px 4px 10px;
+}
+
+/*FIM DO NUMERO DE QUADROS*/
+
+/*TAB FINALIZAR PEDIDO*/
+.fundo_tab_resumo {
+	border: 1px solid #DDD;
+	background: #f5f5f5;
+	padding: 0px 0px 30px 10px;
+}
+#foto_tab_resumo {
+	background: #fff url('../img/camera_upload.png') 5px 5px no-repeat;
+	height: 220px;
+	width: 250px;
+	float: left;
+}
+#mensagem_tab_resumo  {
+	margin: 60px 0px 0px 30px;
+}
+#mensagem_tab_resumo h2 {
+	font: normal 19px/1.5em "din_black", Tahoma;
+	color: #41c4dd;
+	text-transform: uppercase;
+}
+#mensagem_tab_resumo h4 {
+	font: normal 14px/1.5em "din_light", Tahoma;
+	color: #4e4b48;
+}
+
+/*FIM TAB FINALIZAR PEDIDO*/
+
+
+/*DIV TOTAL */
+.customizacao_direita hr {
+	margin: 4px 0px;
+}
+.customizacao_direita h4 img{
+	margin-right: 10px;
+	width: 28px;
+	height: 27px;
+}
+.customizacao_direita h4 {
+	font: normal 13px/25px "din_light", Tahoma, Arial;
+	text-transform: uppercase;
+	margin: 0px;
+	
+}
+.customizacao_direita p {
+	font: normal 14px/24px Tahoma, Arial, Helvetica, Geneva, sans-serif;
+	color: #4e4b48;
+}
+.customizacao_direita h2 {
+	text-align: center;
+	font: normal 30px Tahoma;
+}
+.customizacao_direita h3 {
+	font: normal 14px Verdana;
+	text-transform: none;
+	text-align: center;
+}
+
+/*Fim da div total*/
+#msgValida {
+	color: red;
+}
+
+
+.nav-tabs>.active>a, .nav-tabs>.active>a:hover, .nav-tabs>.active>a:focus {
+	background-color: transparent !important;
+	border: 1px solid transparent !important;
+}
+
+
+
+
+/*ESTILO DO CADASTRO DE USUARIO*/
+#corpo_cadastro h3 {
+	line-height: 20px;
+	font-weight: normal;
+	font-family:'din_light';
+	font-size: 24px;
+	color: #58595b;
+}
+.cadastro_input {
+	margin: 10px 0px 10px 0px;
+	display: inline-block;
+}
+.cadastro_input  input[type="text"]{
+	background: #f1f2f2;
+	padding: 5px 3px 5px 10px;
+	border-radius: 0;
+}
+.cadastro_input select {
+	padding: 5px 5px 5px 5px !important;
+	border-radius: 0;
+	background: #f1f2f2;
+}
+.cadastro_input  input[type="radio"]{
+	margin: 10px;
+	
+	
+	border-radius: 0;
+}
+.msgCadastro img {
+	float: left;
+}
+.msgCadastroTexto {
+	margin: 55px 70px 0 160px;
+}
+.msgCadastroTexto h2 {
+	line-height: 44px;
+	font-weight: normal;
+	font-family:'din_light';
+	font-size: 36px;
+	color: #58595b;
+}
+.msgCadastroTexto h4 {
+	margin-top: 35px;
+	line-height: 24px;
+	font-weight: normal;
+	font-family:'din_light';
+	font-size: 18px;
+	color: #58595b;
+}
+.msgCadastroTexto>h2>p {
+	display: inline;
+	color: #41c4dd;
+}
+/*FIM DO CADASTRO DE USUARIO*/
